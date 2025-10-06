@@ -1,9 +1,21 @@
 <DOCTYPE html>
   <html>
     <head>
-      
+      <script src="https://unpkg.com/kaplay@3001.0.19/dist/kaplay.js"></script>
     </head>
     <body>
-      NOT READY LEAVE OR DIE
+      <script>
+        // Start with default options
+kaplay();
+
+// Start with options
+kaplay({
+    width: 200,
+    height: 200,
+    background: "#d46eb3",
+    scale: 2,
+    canvas: document.getElementById("canvas"),
+});
+      </script>
     </body>
   </html>
