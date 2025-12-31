@@ -1,15 +1,12 @@
 const canvas = document.querySelector("#board canvas");
 const ctx = canvas.getContext("2d");
 
-function draw() {
-    for (let i = 0; i < 100; i++) {
-        const x = Math.random() * w - 50;
-        const y = Math.random() * h - 100;
-        ctx.drawImage(img, x, y);
-    }
+ctx.font = "20pt courier"
+
+const center = w / 2
+ctx.textAlign = "center"
+
+for (let i = 0; i < 11; i++) {
+    ctx.fillText("If you're in the game", center, i * 40);
 }
-
-const img = new Image();
-img.src = "res/images/Get_Rick_Rolled.webp";
-img.addEventListener("load", draw, false);
-
+ctx.strokeText("strokes the word", center, h - 30);
