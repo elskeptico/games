@@ -1,2 +1,3 @@
-const gameType = "awesome"
-alert(`let's make ${gameType} games!!`)
+const canvas = document.querySelector("#board canvas");
+const ctx = canvas.getContext("2d");
+console.log(ctx.canvas);
